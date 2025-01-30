@@ -10,8 +10,8 @@ permalink: /:basename/
 # Setup
 title:            Abhijit Wds Maya
 tagline:          My Wedding
-url:              https://abhijitmondal.in/wedding
-baseurl:          ""
+url:              https://abhijitmondal.in
+baseurl:          "/wedding"
 
 author:
   name:           'Abhijit Mondal'
