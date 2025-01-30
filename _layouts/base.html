@@ -3,7 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Centered Image Crop</title>
+
+    {% if page.redirect %}
+        <meta http-equiv = "refresh" content = "0; url = {{ page.redirect }}" />
+    {% elsif page.localredirect %}
+        <meta http-equiv = "refresh" content = "0; url = {{ site.baseurl }}/{{ page.redirect }}" />
+    {% endif %}
+
+    <title>Abhijit Wds Maya</title>
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css" />
 </head>
 <body>

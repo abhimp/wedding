@@ -1,0 +1,15 @@
+---
+layout: base
+---
+
+    <div class="container system">
+                        {{ content }}
+
+                        {% if page.redirect %}
+                        <p>This page should redirected to <a href="{{ page.redirect }}">{{ page.redirect }} </a>.</p>
+                        <p><a href="{{ page.redirect }}">Click Here</a> if not.</p>
+                        {% elsif page.localredirect %}
+                        <p>This page should redirected to an <a href="{{ site.baseurl }}/{{ page.localredirect }}">another page</a>. </p>
+                        <p><a href="{{ site.baseurl }}/{{ page.localredirect }}">Click Here</a> if not.</p>
+                        {% endif %}
+    </div>
