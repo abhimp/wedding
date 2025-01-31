@@ -16,7 +16,8 @@
 <body>
 <!-- Top Menu -->
 <div class="menu">
-    <a href="#">
+    <div class="menu-container">
+    <a href="{{ site.baseurl }}/index">
         <svg
             width="1.5em"
             height="1.5em"
@@ -35,7 +36,7 @@
         </svg>
     </a>
 
-    <a href="#"><svg
+    <a href="{{ site.baseurl }}/wedding"><svg
         fill="currentColor" height="1.5em" width="1.5em" version="1.1"
             xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512.001 512.001"
             xml:space="preserve">
@@ -49,7 +50,7 @@
                 </g>
             </g>
         </svg></a>
-    <a href="#">
+    <a href="{{ site.baseurl }}/reception">
         <svg fill="currentColor" height="1.5em" width="1.5em" version="1.1" xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512">
             <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -86,7 +87,8 @@
             </g>
         </svg>
     </a>
-    <a href="#"><svg width="1.5em" height="1.5em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <a href="{{ site.baseurl }}/gallery">
+        <svg width="1.5em" height="1.5em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
             <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
             <g id="SVGRepo_iconCarrier">
@@ -100,7 +102,7 @@
                     stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
             </g>
         </svg></a>
-    <a href="#"><svg
+    <a href="{{ site.baseurl }}/location"><svg
         fill="currentColor"
         xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -119,6 +121,7 @@
        </g>
    </g>
    </svg></a>
+   </div>
 </div>
 
 {{ content }}
