@@ -161,33 +161,82 @@ body::before {
     font-family: 'Lipishree';
 }
 
-.beng h1.head {
+.wedpage h1, .wedpage h2 {
     text-align: center;
-    font-size: 64px;
+}
+
+.wedpage h1.wed {
     text-shadow: 0 0 2px #00ffcc, 0 0 4px #00ffcc, 0 0 6px #00ffcc;
+}
+
+.wedpage h1.wed-groom {
+    text-shadow: 0 0 2px #bbff00, 0 0 4px #bbff00, 0 0 6px #bbff00;
+    margin-top: 1em;
+    padding-right: 2em;
+}
+
+.wedpage h1.wed-wd {
+    color: #e8ffdb;
+    text-shadow: 0 0 2px #b571b0, 0 0 4px #b571b0, 0 0 6px #b571b0;
+}
+
+.wedpage h1.wed-bride {
+    text-shadow: 0 0 2px #ffc800, 0 0 4px #ffc800, 0 0 6px #ffc800;
+    margin-bottom: 1em;
+    padding-left: 2em;
+}
+
+
+.wedpage h1.wed-location {
+    text-shadow: 0 0 2px #00ffcc, 0 0 4px #00ffcc, 0 0 6px #00ffcc;
+}
+
+
+.wedpage h1.wed-time {
+    text-shadow: 0 0 2px #00ffcc, 0 0 4px #00ffcc, 0 0 6px #00ffcc;
+}
+
+
+/* ============= */
+
+.wedpage h1 {
+    font-size: 64px;
     /* background: linear-gradient(45deg, #ff6a00, #ee0979);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; */
 }
 
 
+.wedpage h2 {
+    font-size: 48px;
+}
+
 /* Medium screens */
 @media (max-width: 1024px) {
-    .beng h1.head {
+    .wedpage h1 {
         font-size: 48px;
+    }
+    .wedpage h2 {
+        font-size: 36px;
     }
 }
 
 /* Small screens */
 @media (max-width: 768px) {
-    .beng h1.head {
+    .wedpage h1 {
         font-size: 36px;
+    }
+    .wedpage h2 {
+        font-size: 32px;
     }
 }
 
 /* Extra small screens */
 @media (max-width: 480px) {
-    .beng h1.head {
+    .wedpage h1 {
         font-size: 32px;
+    }
+    .wedpage h2 {
+        font-size: 28px;
     }
 }
