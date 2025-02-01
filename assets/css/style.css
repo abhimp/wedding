@@ -166,34 +166,37 @@ body::before {
 }
 
 .wedpage h1.wed {
-    text-shadow: 0 0 2px #00ffcc, 0 0 4px #00ffcc, 0 0 6px #00ffcc;
+    text-shadow: 0 0 2px #00ffcc;
+    color: #ffcb00;
 }
 
 .wedpage h1.wed-groom {
-    text-shadow: 0 0 2px #bbff00, 0 0 4px #bbff00, 0 0 6px #bbff00;
+    text-shadow: 0 0 2px #bbff00;
     margin-top: 1em;
     padding-right: 2em;
+    color: #c7e0f7;
 }
 
 .wedpage h1.wed-wd {
     color: #e8ffdb;
-    text-shadow: 0 0 2px #b571b0, 0 0 4px #b571b0, 0 0 6px #b571b0;
+    text-shadow: 0 0 2px #b571b0;
 }
 
 .wedpage h1.wed-bride {
-    text-shadow: 0 0 2px #ffc800, 0 0 4px #ffc800, 0 0 6px #ffc800;
+    text-shadow: 0 0 2px #ffc800;
     margin-bottom: 1em;
     padding-left: 2em;
+    color: #e31cd7;
 }
 
 
 .wedpage h1.wed-location {
-    text-shadow: 0 0 2px #00ffcc, 0 0 4px #00ffcc, 0 0 6px #00ffcc;
+    text-shadow: 0 0 2px #00ffcc;
 }
 
 
 .wedpage h1.wed-time {
-    text-shadow: 0 0 2px #00ffcc, 0 0 4px #00ffcc, 0 0 6px #00ffcc;
+    text-shadow: 0 0 2px #00ffcc;
 }
 
 
