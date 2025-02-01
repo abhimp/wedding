@@ -5,6 +5,14 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Rengkox';
+    src: url('../fonts/Rengkox-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -161,7 +169,7 @@ body::before {
     font-family: 'Lipishree';
 }
 
-.wedpage h1, .wedpage h2, .reception h1, .reception h2 {
+.wedpage h1, .wedpage h2, .reception h1, .reception h2, .reception h3 {
     text-align: center;
 }
 
@@ -218,43 +226,54 @@ h1.recp {
 
 /* ============= */
 
-.wedpage h1, .reception h1 {
+h1 {
     font-size: 64px;
-    /* background: linear-gradient(45deg, #ff6a00, #ee0979);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; */
 }
 
-.wedpage h2, .reception h2 {
+h2 {
     font-size: 48px;
+}
+
+h3 {
+    font-size: 36px;
 }
 
 /* Medium screens */
 @media (max-width: 1024px) {
-    .wedpage h1, .reception h1 {
+    h1 {
         font-size: 48px;
     }
-    .wedpage h2, .reception h2 {
+    h2 {
         font-size: 36px;
+    }
+    h3 {
+        font-size: 32px;
     }
 }
 
 /* Small screens */
 @media (max-width: 768px) {
-    .wedpage h1, .reception h1 {
+    h1 {
         font-size: 36px;
     }
-    .wedpage h2, .reception h2 {
+    h2 {
         font-size: 32px;
+    }
+
+    h3 {
+        font-size: 28px;
     }
 }
 
 /* Extra small screens */
 @media (max-width: 480px) {
-    .wedpage h1, .reception h1 {
+    h1 {
         font-size: 32px;
     }
-    .wedpage h2, .reception h2 {
+    h2 {
         font-size: 28px;
+    }
+    h3 {
+        font-size: 24px;
     }
 }

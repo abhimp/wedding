@@ -21,9 +21,12 @@ github:
     repo:           https://github.com/abhimp/
 
 collections:
-  wpages:
+  lbeng:
     output: true
     permalink: /:path
+  leng:
+    output: true
+    permalink: /eng/:path
 
 # paginate:         5
 paginate_path:    "blog/page:num/"
