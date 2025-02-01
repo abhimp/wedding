@@ -161,85 +161,100 @@ body::before {
     font-family: 'Lipishree';
 }
 
-.wedpage h1, .wedpage h2 {
+.wedpage h1, .wedpage h2, .reception h1, .reception h2 {
     text-align: center;
 }
 
-.wedpage h1.wed {
-    text-shadow: 0 0 2px #00ffcc;
+h1.wed {
+    /* text-shadow: 0 0 1px #00ffcc; */
     color: #ffcb00;
 }
 
-.wedpage h1.wed-groom {
-    text-shadow: 0 0 2px #bbff00;
+h1.wed-wdgroom {
+    /* text-shadow: 0 0 1px #bbff00; */
     margin-top: 1em;
     padding-right: 2em;
-    color: #c7e0f7;
+    color: #1bf046;
 }
 
-.wedpage h1.wed-wd {
+h1.wed-wd {
     color: #e8ffdb;
-    text-shadow: 0 0 2px #b571b0;
+    /* text-shadow: 0 0 1px #b571b0; */
 }
 
-.wedpage h1.wed-bride {
-    text-shadow: 0 0 2px #ffc800;
+h1.wed-wdbride {
+    /* text-shadow: 0 0 1px #ffc800; */
     margin-bottom: 1em;
     padding-left: 2em;
     color: #e31cd7;
 }
 
 
-.wedpage h1.wed-location {
-    text-shadow: 0 0 2px #00ffcc;
+h1.wed-location {
+    /* text-shadow: 0 0 1px #00ffcc; */
+    color: burlywood;
 }
 
 
-.wedpage h1.wed-time {
-    text-shadow: 0 0 2px #00ffcc;
+h1.wed-time {
+    /* text-shadow: 0 0 1px #00ffcc; */
+    color: yellowgreen;
 }
 
+h1.wed-groom {
+    /* text-shadow: 0 0 1px #bbff00; */
+    color: #6fb5f4;
+}
+
+h1.wed-bride {
+    /* text-shadow: 0 0 1px #ffc800; */
+    color: #e31cd7;
+}
+
+/* ============= */
+h1.recp {
+    color: aquamarine;
+}
 
 /* ============= */
 
-.wedpage h1 {
+.wedpage h1, .reception h1 {
     font-size: 64px;
     /* background: linear-gradient(45deg, #ff6a00, #ee0979);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; */
 }
 
-
-.wedpage h2 {
+.wedpage h2, .reception h2 {
     font-size: 48px;
 }
 
 /* Medium screens */
 @media (max-width: 1024px) {
-    .wedpage h1 {
+    .wedpage h1, .reception h1 {
         font-size: 48px;
     }
-    .wedpage h2 {
+    .wedpage h2, .reception h2 {
         font-size: 36px;
     }
 }
 
 /* Small screens */
 @media (max-width: 768px) {
-    .wedpage h1 {
+    .wedpage h1, .reception h1 {
         font-size: 36px;
     }
-    .wedpage h2 {
+    .wedpage h2, .reception h2 {
         font-size: 32px;
     }
 }
 
 /* Extra small screens */
 @media (max-width: 480px) {
-    .wedpage h1 {
+    .wedpage h1, .reception h1 {
         font-size: 32px;
     }
-    .wedpage h2 {
+    .wedpage h2, .reception h2 {
         font-size: 28px;
     }
 }
