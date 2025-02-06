@@ -88,13 +88,17 @@ body::before {
 .menu a {
     color: white;
     text-decoration: none;
-    margin: 0 15px;
+    margin: 0 10px;
     font-size: 16px;
     line-height: 1.5em;
     transition: 0.3s;
 }
 
 .menu a:hover {
+    color: #f4a261; /* Highlight color */
+}
+
+.menu a.active {
     color: #f4a261; /* Highlight color */
 }
 
@@ -169,6 +173,10 @@ body::before {
     font-family: 'Lipishree';
 }
 
+.eng {
+    font-family: 'Brush Script MT', cursive;
+}
+
 .wedpage h1, .wedpage h2, .reception h1, .reception h2, .reception h3 {
     text-align: center;
 }
@@ -200,7 +208,7 @@ h1.wed-wdbride {
 
 h1.wed-location {
     /* text-shadow: 0 0 1px #00ffcc; */
-    color: burlywood;
+    color: #d78823;
 }
 
 
