@@ -20,7 +20,7 @@
 {% endif %}
 <div class="menu">
     <div class="menu-container">
-    <a href="{{ site.baseurl }}/{{- langPrefix -}}index">
+    <a href="{{ site.baseurl }}/{{- langPrefix -}}index" {% if page.slug == "index" %}class="active"{% endif %} >
         <svg
             width="1.5em"
             height="1.5em"
@@ -38,8 +38,8 @@
             />
         </svg>
     </a>
-
-    <a href="{{ site.baseurl }}/{{- langPrefix -}}wedding"><svg
+    <a href="{{ site.baseurl }}/{{- langPrefix -}}wedding" {% if page.slug == "wedding" %}class="active"{% endif %}>
+        <svg
         fill="currentColor" height="1.5em" width="1.5em" version="1.1"
             xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512.001 512.001"
             xml:space="preserve">
@@ -52,8 +52,9 @@
                     </g>
                 </g>
             </g>
-        </svg></a>
-    <a href="{{ site.baseurl }}/{{- langPrefix -}}reception">
+        </svg>
+    </a>
+    <a href="{{ site.baseurl }}/{{- langPrefix -}}reception" {% if page.slug == "reception" %}class="active"{% endif %}>
         <svg fill="currentColor" height="1.5em" width="1.5em" version="1.1" xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512">
             <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -90,7 +91,7 @@
             </g>
         </svg>
     </a>
-    <a href="{{ site.baseurl }}/{{- langPrefix -}}gallery">
+    <a href="{{ site.baseurl }}/{{- langPrefix -}}gallery" {% if page.slug == "gallery" %}class="active"{% endif %}>
         <svg width="1.5em" height="1.5em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
             <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
@@ -104,26 +105,29 @@
                     d="M22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C21.5093 4.43821 21.8356 5.80655 21.9449 8"
                     stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
             </g>
-        </svg></a>
-    <a href="{{ site.baseurl }}/{{- langPrefix -}}location"><svg
-        fill="currentColor"
-        xmlns="http://www.w3.org/2000/svg"
-        xmlns:xlink="http://www.w3.org/1999/xlink"
-        width="1.5em" height="1.3em" viewBox="0 0 384.25 384.25"
-        xml:space="preserve">
-   <g>
-       <g>
-           <path d="M192.125,0C122.955,0,66.674,56.279,66.674,125.449c0,63.29,100.927,232.376,112.427,251.451
-               c2.757,4.557,7.694,7.35,13.024,7.35s10.267-2.793,13.021-7.35c11.504-19.074,112.43-188.161,112.43-251.451
-               C317.576,56.28,261.295,0,192.125,0z M192.125,339.1c-35.029-60.594-95.039-172.887-95.039-213.649
-               c0-52.404,42.635-95.035,95.039-95.035c52.404,0,95.039,42.631,95.039,95.035C287.164,166.198,227.154,278.498,192.125,339.1z"/>
-           <path d="M192.125,53.214c-39.835,0-72.236,32.403-72.236,72.235c0,39.836,32.401,72.236,72.236,72.236
-               c39.832,0,72.236-32.4,72.236-72.236C264.361,85.618,231.957,53.214,192.125,53.214z M192.125,167.274
-               c-23.062,0-41.824-18.762-41.824-41.824c0-23.06,18.762-41.824,41.824-41.824c23.06,0,41.824,18.765,41.824,41.824
-               C233.949,148.512,215.186,167.274,192.125,167.274z"/>
-       </g>
-   </g>
-   </svg></a>
+        </svg>
+    </a>
+    <a href="{{ site.baseurl }}/{{- langPrefix -}}location" {% if page.slug == "location" %}class="active"{% endif %}>
+        <svg
+            fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            width="1.5em" height="1.3em" viewBox="0 0 384.25 384.25"
+            xml:space="preserve">
+            <g>
+                <g>
+                    <path d="M192.125,0C122.955,0,66.674,56.279,66.674,125.449c0,63.29,100.927,232.376,112.427,251.451
+                        c2.757,4.557,7.694,7.35,13.024,7.35s10.267-2.793,13.021-7.35c11.504-19.074,112.43-188.161,112.43-251.451
+                        C317.576,56.28,261.295,0,192.125,0z M192.125,339.1c-35.029-60.594-95.039-172.887-95.039-213.649
+                        c0-52.404,42.635-95.035,95.039-95.035c52.404,0,95.039,42.631,95.039,95.035C287.164,166.198,227.154,278.498,192.125,339.1z"/>
+                    <path d="M192.125,53.214c-39.835,0-72.236,32.403-72.236,72.235c0,39.836,32.401,72.236,72.236,72.236
+                        c39.832,0,72.236-32.4,72.236-72.236C264.361,85.618,231.957,53.214,192.125,53.214z M192.125,167.274
+                        c-23.062,0-41.824-18.762-41.824-41.824c0-23.06,18.762-41.824,41.824-41.824c23.06,0,41.824,18.765,41.824,41.824
+                        C233.949,148.512,215.186,167.274,192.125,167.274z"/>
+                </g>
+            </g>
+        </svg>
+    </a>
 {%- if page.collection=="lbeng" -%}
    <a href="{{ site.baseurl }}/eng{{ page.url }}" style="font-family: 'Brush Script MT', cursive;font-size: 1.5em;">E</a>
 {%- else -%}
@@ -131,6 +135,58 @@
 {%- endif -%}
    </div>
 </div>
+
+<script>
+    let startX = 0;
+    let endX = 0;
+
+    let pages = [
+        "index",
+        "wedding",
+        "reception",
+        "gallery",
+        "location",
+        "index",
+        "wedding",
+        "reception",
+        "gallery",
+        "location"
+    ]
+
+    let curPage = "{{- page.slug -}}";
+
+    let urlPrefix = "{{ site.baseurl }}/{{- langPrefix -}}"
+
+    let prev = "location"
+    let next = "wedding"
+
+    for(i = 0; i < pages.length/2; i++) {
+        if (pages[i] == curPage)
+            break;
+        prev = pages[i]
+        next = pages[i+2]
+    }
+
+    document.addEventListener("touchstart", (event) => {
+        startX = event.touches[0].clientX;
+    });
+
+    document.addEventListener("touchend", (event) => {
+        endX = event.changedTouches[0].clientX;
+        handleSwipe();
+    });
+
+    function handleSwipe() {
+        let diff = startX - endX;
+        if (diff > 50) {
+            // Swipe Left → Go to Next Page
+            window.location.href = next;
+        } else if (diff < -50) {
+            // Swipe Right → Go to Previous Page
+            window.location.href = prev;
+        }
+    }
+</script>
 
 {{ content }}
 
