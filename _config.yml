@@ -23,7 +23,7 @@ github:
 collections:
   lbeng:
     output: true
-    permalink: /:path
+    permalink: /beng/:path
   leng:
     output: true
     permalink: /eng/:path

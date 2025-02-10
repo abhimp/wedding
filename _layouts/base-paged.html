@@ -10,19 +10,17 @@
         <meta http-equiv = "refresh" content = "0; url = {{ site.baseurl }}/{{ page.redirect }}" />
     {% endif %}
 
-    <title>Abhijit Wds Maya</title>
+    <title>Abhijit Weds Maya</title>
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css" />
 </head>
 <body>
 <!-- Top Menu -->
-{% if page.collection == "leng" %}
-  {% assign langPrefix = "eng/" %}
-{% endif %}
-{% if page.nomenu != false %}
-<!--
+<!-- {% if page.slug == "leng" %}
+  {% assign langPrefix = "eng-" %}
+{% endif %} -->
 <div class="menu">
     <div class="menu-container">
-    <a href="{{ site.baseurl }}/{{- langPrefix -}}index" {% if page.slug == "index" %}class="active"{% endif %} >
+    <a href="#index" class="menu-item {% if page.slug == "index" %}active{% endif %}">
         <svg
             width="1.5em"
             height="1.5em"
@@ -40,7 +38,7 @@
             />
         </svg>
     </a>
-    <a href="{{ site.baseurl }}/{{- langPrefix -}}wedding" {% if page.slug == "wedding" %}class="active"{% endif %}>
+    <a href="#wedding" class="menu-item {% if page.slug == "wedding" %}active{% endif %}">
         <svg
         fill="currentColor" height="1.5em" width="1.5em" version="1.1"
             xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512.001 512.001"
@@ -56,7 +54,7 @@
             </g>
         </svg>
     </a>
-    <a href="{{ site.baseurl }}/{{- langPrefix -}}reception" {% if page.slug == "reception" %}class="active"{% endif %}>
+    <a href="#reception" class="menu-item {% if page.slug == "reception" %}active{% endif %}">
         <svg fill="currentColor" height="1.5em" width="1.5em" version="1.1" xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512">
             <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -93,7 +91,8 @@
             </g>
         </svg>
     </a>
-    <a href="{{ site.baseurl }}/{{- langPrefix -}}gallery" {% if page.slug == "gallery" %}class="active"{% endif %}>
+    <!--
+    <a href="#gallery" class="menu-item {% if page.slug == "gallery" %}active{% endif %}">
         <svg width="1.5em" height="1.5em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
             <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
@@ -109,7 +108,7 @@
             </g>
         </svg>
     </a>
-    <a href="{{ site.baseurl }}/{{- langPrefix -}}location" {% if page.slug == "location" %}class="active"{% endif %}>
+    <a href="#location" class="menu-item {% if page.slug == "location" %}active{% endif %}">
         <svg
             fill="currentColor"
             xmlns="http://www.w3.org/2000/svg"
@@ -130,16 +129,16 @@
             </g>
         </svg>
     </a>
-{%- if page.collection=="lbeng" -%}
-   <a href="{{ site.baseurl }}/eng{{ page.url }}" style="font-family: 'Brush Script MT', cursive;font-size: 1.5em;">E</a>
+    -->
+{%- if page.lang=="beng" -%}
+   <a href="{{ site.baseurl }}/eng-index" x-data-src="{{ site.baseurl }}/eng-index" id="langchangemenu" style="font-family: 'Brush Script MT', cursive;font-size: 1.5em;">E</a>
 {%- else -%}
-    <a href="{{ site.baseurl }}{{ page.url | replace: '/eng', '' }}" style="font-family: Lipishree;font-size: 1.5em;">ব</a>
+    <a href="{{ site.baseurl }}/" x-data-src="{{ site.baseurl }}/" id="langchangemenu" style="font-family: Lipishree;font-size: 1.5em;">ব</a>
 {%- endif -%}
    </div>
-</div> -->
-{% endif %}
+</div>
 
-<script>
+<!-- <script>
     let startX = 0;
     let endX = 0;
 
@@ -189,9 +188,40 @@
             window.location.href = prev;
         }
     }
-</script>
+</script> -->
 
 {{ content }}
+
+<script>
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const sections = document.querySelectorAll(".section");
+      const menuItems = document.querySelectorAll(".menu-item");
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              let id = entry.target.getAttribute("id");
+
+              // Remove active class from all
+              menuItems.forEach((item) => item.classList.remove("active"));
+
+              // Add active class to the matching menu item
+              document.querySelector(`.menu-item[href="#${id}"]`)?.classList.add("active");
+              menuentry = document.querySelector("#langchangemenu")
+              menuentryUrl = menuentry.getAttribute("x-data-src")
+              menuentry = menuentry.setAttribute("href", `${menuentryUrl}#${id}`)
+            }
+          });
+        },
+        { threshold: 0.4 } // 40% visibility to trigger
+      );
+
+      sections.forEach((section) => observer.observe(section));
+    });
+
+</script>
 
 </body>
 </html>

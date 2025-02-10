@@ -1,6 +1,7 @@
 ---
 layout: wedding
 lang: eng
+order: 30
 ---
 
 <div class="eng reception">
@@ -16,4 +17,5 @@ lang: eng
             loading="lazy">
         </iframe>
     </div>
+    <h3><a href="https://maps.app.goo.gl/Sme2MVXKQ4Hjevv3A">Open in map</a></h3>
 </div>

@@ -1,6 +1,7 @@
 ---
 layout: wedding
 lang: beng
+order: 30
 ---
 
 <div class="beng reception">
@@ -18,4 +19,5 @@ lang: beng
             loading="lazy">
         </iframe>
     </div>
+    <h3><a href="https://maps.app.goo.gl/Sme2MVXKQ4Hjevv3A">ম্যাপে দেখুন</a></h3>
 </div>

@@ -194,6 +194,19 @@ body::before {
     z-index: 990;
 }
 
+div.section {
+    min-height: 100vh;
+}
+
+div.divider {
+    text-align: center;
+}
+
+div.divider svg {
+    max-width: 70%;
+    padding-top: 5vh;
+}
+
 .beng {
     font-family: 'Lipishree';
 }
