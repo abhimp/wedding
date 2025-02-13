@@ -2,6 +2,7 @@
 layout: wedding
 lang: beng
 order: 30
+showfoodmenu: false
 ---
 
 <div class="beng reception">
@@ -20,4 +21,14 @@ order: 30
         </iframe>
     </div>
     <h3><a href="https://maps.app.goo.gl/Sme2MVXKQ4Hjevv3A">ম্যাপে দেখুন</a></h3>
+    {% if page.showfoodmenu %}
+    <br />
+    <br />
+    <!-- <h1> Menu </h1> -->
+    <div class="foodmenu-image" id="foodmenu">
+        <img src="{{ site.baseurl }}/assets/img/menu/Menu-1-beng/Slide1.jpeg" /> <br/>
+        <img src="{{ site.baseurl }}/assets/img/menu/Menu-1-beng/Slide2.jpeg" /> <br/>
+        <h3><a href="{{ site.baseurl }}/assets/img/menu/Menu-1-beng.pdf">পিডিএফ দেখুন</a></h3>
+    </div>
+    {% endif %}
 </div>

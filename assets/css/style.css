@@ -342,3 +342,17 @@ h3 {
     height: 100%;
     border: 0;
 }
+
+
+.foodmenu-image {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.foodmenu-image img{
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 1px auto;
+}
