@@ -2,7 +2,7 @@
 layout: wedding
 lang: eng
 order: 30
-showfoodmenu: false
+showfoodmenu: true
 ---
 
 <div class="eng reception">
