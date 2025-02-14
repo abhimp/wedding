@@ -2,7 +2,7 @@
 layout: wedding
 lang: beng
 order: 30
-showfoodmenu: false
+showfoodmenu: true
 ---
 
 <div class="beng reception">
