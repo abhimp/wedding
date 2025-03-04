@@ -352,6 +352,7 @@ h3 {
 
 .foodmenu-image img{
     max-width: 400px;
+    width: 90%;
     height: auto;
     display: block;
     margin: 1px auto;
